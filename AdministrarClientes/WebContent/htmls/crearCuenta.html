@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crear cuenta</title>
+	<meta name="viewport" content="width=device-width, initial-scale = 1" />
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/myCSS.css">
+	<link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+	<script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 id="tituloClientes" class="text-center">Crear cuenta</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form onsubmit="return crearCuenta();" action="../CrearCuenta" method="post">
+				<div class="col-lg-4 col-lg-offset-4 contenedorSesion topSpace">
+					<div class="form-group has-feedback text-center">
+						<label for="usuarioID">Nombre de usuario</label>
+						<input type="text" class="form-control" id="usuarioID" name="usuario" />
+                        <span class="label label-danger hidden">Campo Obligatorio</span>
+					</div>
+					<div class="form-group has-feedback text-center">
+						<label for="pwID">Contraseña</label>
+						<input type="password" class="form-control" id="pwID" name="pw" />
+                        <span class="label label-danger hidden">Campo Obligatorio</span>
+					</div>
+					<div class="form-group has-feedback text-center">
+						<label for="pwID_R">Repetir contraseña</label>
+						<input type="password" class="form-control" id="pwID_R" name="pw_R" />
+                        <span class="label label-danger hidden">Campo Obligatorio</span>
+                        <span class="label label-danger hidden">Contraseñas no coinciden</span>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn btn-primary">Crear cuenta</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/plugins.js"></script>
+	<script src="../js/myScript.js"></script>
+</body>
+</html>
